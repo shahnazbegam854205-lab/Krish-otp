@@ -1979,10 +1979,8 @@ function openApiDocs() {
     playWelcomeSound();
     
     // ... baaki existing code same rahega
-  }
-});
-        
-        try {
+    
+    try {
           const snapshot = await database.ref('users/' + user.uid).once('value');
           const userData = snapshot.val();
           
